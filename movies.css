@@ -1,0 +1,313 @@
+/*---Background---*/
+body
+{
+    background: linear-gradient(270deg, #ffcc66, #ffabcf, #ffcc66);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 40s ease infinite;
+    -moz-animation: AnimationName 40s ease infinite;
+    animation: AnimationName 40s ease infinite;
+}		
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+/*---Scrollbar---*/
+body::-webkit-scrollbar-track
+{	
+	background-color:rgba(0,0,0,0.6);
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color:rgba(0,0,0,0.6);
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(270deg, #ffba2f, #ffabcf, #ff9e5c);
+    background-size: 600% 600%;
+}
+
+/*---Content block---*/
+#content
+{
+	display:flex;
+	flex-direction:column;
+	width:1024px;
+	min-height:768px;
+	margin: 50px auto;
+	background-color:rgba(0,0,0,0.2);
+}
+.contentHeader
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	padding:10px;
+	font-family:'Russo One';
+	font-size:32px;
+	color:white;
+}
+.contentBody
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	margin-top:50px;
+	font-family:'Russo One';
+	font-size:18px;
+	color:white;
+}
+.contentBody p
+{
+	font-family:'Ubuntu';
+}
+/*--Title page--*/
+.mode
+{
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+	
+    height:160px;
+    width:160px;
+    padding:10px;
+	text-align:center;
+}
+.mode:hover
+{
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+	background-color:rgba(0,0,0,0.2);
+}
+/*--Search page--*/
+.searchBody
+{
+    flex-direction:column !important;
+    align-items:stretch;
+}
+#filters
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:baseline;
+    margin:5px;
+}
+.filter
+{
+    margin:0px 20px;
+}
+select
+{
+    width:150px;
+    height:35px;
+    border:none;
+	background-color:rgba(0,0,0,0.4);
+	font-family:'Ubuntu';
+	color:#fff;
+}
+select > option
+{
+	background-color:rgba(0,0,0,0.4);
+}
+.searchBtn
+{
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+    padding:5px;
+}
+.searchBtn:hover
+{
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+    background-color:rgba(0,0,0,0.4);
+}
+.sItem
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:sapce-around;
+    margin-top:25px;
+}
+.sPoster
+{
+    display:flex;
+    margin:10px;
+}
+.sDescr
+{
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+}
+/*--Draft page--*/
+.reset
+{
+   display:flex;
+   margin:auto;
+}
+.question
+{
+    width:75%;
+}
+.qHeader
+{	
+    padding:10px;
+    background-color:rgba(0,0,0,0.4);
+}
+.qAnswer
+{	
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+	margin:10px 0px;
+    padding:15px 10px;
+    background-color:rgba(0,0,0,0.2);
+    font-family:'Ubuntu';
+}
+.qAnswer:hover
+{	
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+    background-color:rgba(0,0,0,0.4);
+}
+#draftSelection
+{
+    
+}
+.draftSelection
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top:25px;
+}
+.film
+{
+	text-align:center;
+}
+/*---Menu block---*/
+#menu
+{
+	position:fixed;
+	float:right;
+	right:0;
+	top:50px;		
+}
+ul
+{
+	list-style:none;
+	display:flex;
+	flex-direction:column;
+	margin:0;
+	padding:0;
+}
+.liBtn
+{
+	-o-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+	
+	position:relative;
+	display:flex;
+	flex-direction:row;
+	right:-281px;
+}
+.liBtn:hover
+{			
+	-o-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+		
+	-o-transform: translateX(-281px);
+	-ms-transform: translateX(-281px);
+	-moz-transform: translateX(-281px);
+	-webkit-transform: translateX(-281px);
+	transform: translateX(-281px);			
+	
+	background-color:rgba(0,0,0,0.4);
+}
+.active
+{
+	-o-transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	transition: none;
+		
+	-o-transform: none;
+	-ms-transform: none;
+	-moz-transform: none;
+	-webkit-transform: none;
+	transform: none;
+	
+	right:0px;		
+	background-color:rgba(0,0,0,0.6);	
+}
+.active:hover
+{
+	-o-transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	transition: none;
+		
+	-o-transform: none;
+	-ms-transform: none;
+	-moz-transform: none;
+	-webkit-transform: none;
+	transform: none;
+
+	background-color:rgba(0,0,0,0.6);	
+}
+.menu-icon
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:60px;
+	height:60px;
+	background-color:rgba(0,0,0,0.2);
+}
+.menu-li
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:280px;
+	height:60px;
+	background-color:rgba(0,0,0,0.2);
+	font-family:'Days';
+	font-size:22px;
+	color:white;
+}
